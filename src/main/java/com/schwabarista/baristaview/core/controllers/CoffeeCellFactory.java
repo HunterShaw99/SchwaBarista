@@ -1,7 +1,5 @@
 package com.schwabarista.baristaview.core.controllers;
 
-
-import com.schwabarista.baristaview.core.controllers.CoffeeCell;
 import com.schwabarista.baristaview.models.CoffeeModel;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
