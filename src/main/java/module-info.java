@@ -8,4 +8,6 @@ module com.schwabarista.baristaview {
 
     opens com.schwabarista.baristaview to javafx.fxml;
     exports com.schwabarista.baristaview;
+    exports com.schwabarista.baristaview.core.controllers;
+    opens com.schwabarista.baristaview.core.controllers to javafx.fxml;
 }
