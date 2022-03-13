@@ -105,5 +105,13 @@ public class HelloController {
 //        stage.setScene(scene);
 //        stage.show();
     }
+
+    public void CancelOrderClicked(ActionEvent actionEvent) {
+        System.out.println("Cancelled");
+    }
+
+    public void ConfirmButtonClicked(ActionEvent actionEvent) {
+        System.out.println("Confirmed");
+    }
 }
 
