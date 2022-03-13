@@ -4,13 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c877762b-e059-4cb3-990b-8111056964fb" name="Changes" comment="" />
+    <list default="true" id="c877762b-e059-4cb3-990b-8111056964fb" name="Changes" comment="Set up ListView with custom cells to mirror the listview style in the cart page.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="CSS File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -25,11 +41,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../schwacoffe" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="advanced.settings" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MainPage">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.schwabarista.baristaview.HelloApplication" />
       <module name="baristaview" />
@@ -43,8 +60,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.schwabarista.baristaview.MainPage" />
+      <module name="baristaview" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.schwabarista.baristaview.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainPage" />
         <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
@@ -60,7 +91,24 @@
       <workItem from="1646417087831" duration="825000" />
       <workItem from="1646417948599" duration="2000" />
       <workItem from="1646418297931" duration="299000" />
+      <workItem from="1646704653161" duration="2137000" />
+      <workItem from="1646706842850" duration="2590000" />
+      <workItem from="1646721282297" duration="805000" />
+      <workItem from="1646722115479" duration="360000" />
+      <workItem from="1646768545173" duration="2801000" />
+      <workItem from="1646847223926" duration="5774000" />
+      <workItem from="1647029527701" duration="646000" />
+      <workItem from="1647131479358" duration="649000" />
+      <workItem from="1647209016826" duration="676000" />
     </task>
+    <task id="LOCAL-00001" summary="Set up ListView with custom cells to mirror the listview style in the cart page.">
+      <created>1646850813428</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646850813428</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -76,6 +124,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Set up ListView with custom cells to mirror the listview style in the cart page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Set up ListView with custom cells to mirror the listview style in the cart page." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
