@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="base" maxHeight="120.0" maxWidth="512.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="512.0" stylesheets="@OrderCell.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schwabarista.baristaview.OrderCellController">
+<AnchorPane fx:id="base" maxHeight="120.0" maxWidth="512.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="512.0" stylesheets="@OrderCell.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schwabarista.baristaview.OrderCellController">
    <children>
-      <Button fx:id="ViewButton" layoutX="417.0" layoutY="27.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="70.0" text="View">
+      <Button fx:id="ViewButton" layoutX="417.0" layoutY="27.0" mnemonicParsing="false" onAction="#viewButtonPressed" prefHeight="36.0" prefWidth="70.0" text="View">
          <font>
             <Font size="14.0" />
          </font></Button>
+      <Label layoutX="10.0" layoutY="20.0" prefHeight="50.0" prefWidth="82.0" text="Order #:" />
+      <Label fx:id="orderID" layoutX="73.0" layoutY="32.0" prefHeight="26.0" prefWidth="105.0" text="Label" />
+      <Label fx:id="drinkNumber" layoutX="194.0" layoutY="11.0" prefHeight="20.0" prefWidth="20.0" text="Label" />
+      <Label layoutX="217.0" layoutY="12.0" prefHeight="20.0" prefWidth="98.0" text="Beverages" />
+      <Label layoutX="194.0" layoutY="37.0" text="Total:" />
+      <Label layoutX="194.0" layoutY="62.0" text="Status:" />
+      <Label fx:id="orderStatus" layoutX="249.0" layoutY="58.0" prefHeight="26.0" prefWidth="82.0" text="Label" />
+      <Label fx:id="orderTotal" layoutX="242.0" layoutY="37.0" prefHeight="20.0" prefWidth="50.0" text="Label" />
    </children>
 </AnchorPane>
