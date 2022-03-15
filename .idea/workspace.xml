@@ -9,7 +9,10 @@
       <change beforePath="$PROJECT_DIR$/baristaview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/baristaview.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/MainPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderCell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderCellFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderCellFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/OrderCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/OrderCell.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -40,11 +43,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/core/controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../schwacoffe" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -98,6 +102,8 @@
       <workItem from="1647198989392" duration="493000" />
       <workItem from="1647209808081" duration="195000" />
       <workItem from="1647210055957" duration="62000" />
+      <workItem from="1647310348462" duration="258000" />
+      <workItem from="1647310639265" duration="6632000" />
     </task>
     <servers />
   </component>
@@ -109,7 +115,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
