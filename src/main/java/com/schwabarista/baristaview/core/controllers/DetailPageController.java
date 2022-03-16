@@ -1,12 +1,12 @@
 package com.schwabarista.baristaview.core.controllers;
 
-//import com.schwa.schwacoffe.core.data.CartManager;
+import com.schwabarista.baristaview.MainPageController;
+import com.schwabarista.baristaview.ObserverManager;
+import com.schwabarista.baristaview.core.data.OrderManager;
 import com.schwabarista.baristaview.MainPage;
 import com.schwabarista.baristaview.models.CoffeeModel;
-import com.schwabarista.baristaview.models.constants.CoffeePrice;
-import com.schwabarista.baristaview.models.constants.Dairy;
-import com.schwabarista.baristaview.models.constants.Flavor;
-import com.schwabarista.baristaview.models.constants.Size;
+import com.schwabarista.baristaview.models.OrderModel;
+import com.schwabarista.baristaview.models.constants.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -24,11 +24,13 @@ import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.math.BigDecimal;
+import java.util.Calendar;
 
 public class DetailPageController {
 
     @FXML
-    private Label AppLabel;
+    private Label AppLabel, OrderNumberLabel, OrderTotalLabel, PickupTimeLabel;
 
     @FXML
     private ListView<CoffeeModel> ConfirmListView;
@@ -49,23 +51,14 @@ public class DetailPageController {
     private Scene scene;
     private Parent root;
 
-    /**
-     * TODO:
-     * this is the same as the confirmation page, make some adjustments so that
-     *      the page makes more sense in this different context.
-     *
-     */
-
     public void initialize() {
 
         //temporary testing stuff
         /**
          * TODO:
-         * Replace with:
-         * list of items from selected OrderModel
+         * Remove this
          */
         ObservableList<CoffeeModel> items = FXCollections.observableArrayList();
-
         Image image = testImageView.getImage();
 
         CoffeeModel c1 = new CoffeeModel(image.getUrl());
@@ -97,16 +90,28 @@ public class DetailPageController {
         c4.setSize(Size.LARGE);
         c4.setPrice(CoffeePrice.LARGE_COST);
         items.add(c4);
-        ConfirmListView.setItems(items);
+
+        BigDecimal total = c1.getPrice().add(c2.getPrice()).add(c3.getPrice()).add(c4.getPrice());
+        OrderModel order = new OrderModel(total, items, OrderStatus.PROCESSING);
+
+        Calendar c = Calendar.getInstance();
+        c.add(Calendar.MINUTE, 16);
+
+        String time = c.get(Calendar.HOUR) + ":" + String.format("%02d", c.get(Calendar.MINUTE));
+        order.SetPickupTime(time);
+
+        OrderManager.GetInstance().AddItem(order);
+        OrderManager.GetInstance().SetCurrentItem(order);
         //end
 
+        ConfirmListView.setItems(OrderManager.GetInstance().GetCurrentItem().GetBeverageList());
         ConfirmListView.setCellFactory(new CoffeeCellFactory());
-    }
 
-    @FXML
-    void ExitButtonClicked(ActionEvent event) {
-        Stage stage = (Stage) ExitButton.getScene().getWindow();
-        stage.close();
+        OrderNumberLabel.setText("Order #" + OrderManager.GetInstance().GetCurrentItem().GetOrderID().substring(0,5));
+        OrderTotalLabel.setText("$" + OrderManager.GetInstance().GetCurrentItem().Get_OrderTotal());
+        PickupTimeLabel.setText(OrderManager.GetInstance().GetCurrentItem().GetPickupTime());
+
+
     }
 
     @FXML
@@ -116,29 +121,24 @@ public class DetailPageController {
 
     public void CancelButtonClicked(ActionEvent event) throws IOException {
         System.out.println("Cancelled");
-        DequeueItem();
+        OrderManager.GetInstance().RemoveCurrentItem();
         SwitchToMainPage(event);
     }
 
     public void ConfirmButtonClicked(ActionEvent event) throws IOException {
         System.out.println("Confirmed");
-        DequeueItem();
+        OrderManager.GetInstance().RemoveCurrentItem();
         SwitchToMainPage(event);
     }
 
-    private void DequeueItem() {
-        new Thread(() -> {
-            //TODO: Dequeue item
-            System.out.println("Item dequeued.");
-        });
-    }
 
     private void SwitchToMainPage(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(MainPage.class.getResource("main-page-view.fxml"));
-        root = loader.load();
+        FXMLLoader fxmlLoader = new FXMLLoader(MainPage.class.getResource("main-page-view.fxml"));
+        MainPageController mainpagecontroller = new MainPageController(new ObserverManager());
+        fxmlLoader.setController(mainpagecontroller);
 
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
+        scene = new Scene(fxmlLoader.load());
 
         stage.setScene(scene);
         stage.show();

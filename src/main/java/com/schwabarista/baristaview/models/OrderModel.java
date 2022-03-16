@@ -11,6 +11,7 @@ public class OrderModel {
     private ObservableList<CoffeeModel> beverageLIST;
     private final String orderID;
     private OrderStatus orderStatus;//Order Status is either {PROCESSING, DONE, CANCELLED}
+    private String pickupTime;
 
     public OrderModel(BigDecimal orderTotal, ObservableList<CoffeeModel> beverageLIST, OrderStatus orderStatus) {
         this.orderTotal = orderTotal;
@@ -37,4 +38,11 @@ public class OrderModel {
         this.orderStatus = orderStatus;
     }
 
+    public String GetPickupTime() {
+        return pickupTime;
+    }
+
+    public void SetPickupTime(String pickupTime) {
+        this.pickupTime = pickupTime;
+    }
 }
