@@ -10,12 +10,9 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/ReceiveOrder.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/Subject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-=======
       <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/MainPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/main-page-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/main-page-view.fxml" afterDir="false" />
->>>>>>> 0b7d4c3054db9a009b9463f95dbbd21e834bd556
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,10 +105,8 @@
       <workItem from="1647210055957" duration="62000" />
       <workItem from="1647310348462" duration="258000" />
       <workItem from="1647310639265" duration="6632000" />
-<<<<<<< HEAD
       <workItem from="1647383685064" duration="646000" />
       <workItem from="1647385018285" duration="496000" />
-=======
       <workItem from="1647386790769" duration="21900000" />
       <workItem from="1647408935607" duration="295000" />
       <workItem from="1647409411033" duration="266000" />
@@ -119,7 +114,6 @@
       <workItem from="1647442972266" duration="2798000" />
       <workItem from="1647445870865" duration="267000" />
       <workItem from="1647446271832" duration="3476000" />
->>>>>>> 0b7d4c3054db9a009b9463f95dbbd21e834bd556
     </task>
     <servers />
   </component>
