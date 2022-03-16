@@ -1,6 +1,7 @@
 package com.schwabarista.baristaview.core.controllers;
 
 //import com.schwa.schwacoffe.core.data.CartManager;
+import com.schwabarista.baristaview.MainPage;
 import com.schwabarista.baristaview.models.CoffeeModel;
 import com.schwabarista.baristaview.models.constants.CoffeePrice;
 import com.schwabarista.baristaview.models.constants.Dairy;
@@ -24,7 +25,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloController {
+public class DetailPageController {
 
     @FXML
     private Label AppLabel;
@@ -81,6 +82,21 @@ public class HelloController {
         c2.setSize(Size.LARGE);
         c2.setPrice(CoffeePrice.LARGE_COST);
         items.add(c2);
+
+        CoffeeModel c3 = new CoffeeModel(image.getUrl());
+        c3.setName("Third item");
+        c3.setMilk(Dairy.ALMOND);
+        c3.setSize(Size.SMALL);
+        c3.setPrice(CoffeePrice.SMALL_COST);
+        c3.addFlavor(Flavor.CARAMEL);
+        items.add(c3);
+
+        CoffeeModel c4 = new CoffeeModel(image.getUrl());
+        c4.setName("Fourth item");
+        c4.setMilk(Dairy.SKIM);
+        c4.setSize(Size.LARGE);
+        c4.setPrice(CoffeePrice.LARGE_COST);
+        items.add(c4);
         ConfirmListView.setItems(items);
         //end
 
@@ -95,23 +111,37 @@ public class HelloController {
 
     @FXML
     void MenuButtonClicked(ActionEvent event) throws IOException {
-        //switch scenes
-//        FXMLLoader loader = new FXMLLoader(getClass().getResource("Menu.fxml"));
-//        root = loader.load();
-//
-//        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-//        scene = new Scene(root);
-//
-//        stage.setScene(scene);
-//        stage.show();
+        SwitchToMainPage(event);
     }
 
-    public void CancelOrderClicked(ActionEvent actionEvent) {
+    public void CancelButtonClicked(ActionEvent event) throws IOException {
         System.out.println("Cancelled");
+        DequeueItem();
+        SwitchToMainPage(event);
     }
 
-    public void ConfirmButtonClicked(ActionEvent actionEvent) {
+    public void ConfirmButtonClicked(ActionEvent event) throws IOException {
         System.out.println("Confirmed");
+        DequeueItem();
+        SwitchToMainPage(event);
+    }
+
+    private void DequeueItem() {
+        new Thread(() -> {
+            //TODO: Dequeue item
+            System.out.println("Item dequeued.");
+        });
+    }
+
+    private void SwitchToMainPage(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(MainPage.class.getResource("main-page-view.fxml"));
+        root = loader.load();
+
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+
+        stage.setScene(scene);
+        stage.show();
     }
 }
 

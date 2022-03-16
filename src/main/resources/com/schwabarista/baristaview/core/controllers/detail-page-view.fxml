@@ -13,11 +13,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" stylesheets="@hello-style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schwabarista.baristaview.core.controllers.HelloController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" stylesheets="@detail-page-style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schwabarista.baristaview.core.controllers.DetailPageController">
    <center>
       <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="621.0" spacing="15.0" BorderPane.alignment="CENTER">
          <children>
-            <Label prefHeight="47.0" prefWidth="339.0" text="Your order has been confirmed!">
+            <Label fx:id="OrderNumberLabel" alignment="CENTER" prefHeight="47.0" prefWidth="339.0" text="Order #1">
                <font>
                   <Font name="Georgia" size="24.0" />
                </font>
@@ -25,11 +25,13 @@
             <Separator prefWidth="200.0" />
             <Pane maxWidth="570.0" prefHeight="606.0" prefWidth="570.0">
                <children>
-                  <ListView fx:id="ConfirmListView" layoutX="7.0" layoutY="31.0" prefHeight="282.0" prefWidth="559.0" />
-                  <Button fx:id="MenuButton" layoutX="56.0" layoutY="544.0" mnemonicParsing="false" onAction="#MenuButtonClicked" text="Menu" />
-                  <Button fx:id="ExitButton" layoutX="458.0" layoutY="544.0" mnemonicParsing="false" onAction="#ExitButtonClicked" text="Exit" />
-                  <Button layoutX="458.0" layoutY="547.0" mnemonicParsing="false" onAction="#ConfirmButtonClicked" text=" Confirm Order" translateX="-105.0" translateY="-54.0" />
-                  <Button layoutX="404.0" layoutY="494.0" mnemonicParsing="false" onAction="#CancelOrderClicked" text="Cancel Order" translateX="-295.0" />
+                  <ListView fx:id="ConfirmListView" layoutX="7.0" layoutY="31.0" prefHeight="320.0" prefWidth="559.0" />
+                  <Button fx:id="ConfirmButton" layoutX="420.0" layoutY="520.0" mnemonicParsing="false" onAction="#ConfirmButtonClicked" prefHeight="50.0" prefWidth="150.0" text=" Confirm Order" />
+                  <Button fx:id="CancelButton" layoutY="520.0" mnemonicParsing="false" onAction="#CancelButtonClicked" prefHeight="50.0" prefWidth="150.0" text="Cancel Order" />
+                  <Label layoutX="161.0" layoutY="420.0" text="Order Total:" />
+                  <Label layoutX="148.0" layoutY="380.0" text="Pickup Time:" />
+                  <Label fx:id="OrderTotalLabel" layoutX="302.0" layoutY="420.0" text="\$14.99" />
+                  <Label fx:id="PickupTimeLabel" layoutX="302.0" layoutY="380.0" text="3:05" />
                </children></Pane>
          </children>
          <BorderPane.margin>
@@ -43,6 +45,7 @@
    <top>
       <HBox fx:id="HeaderBar" alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="800.0" spacing="185.0" BorderPane.alignment="CENTER">
          <children>
+            <Button fx:id="MenuButton" mnemonicParsing="false" onAction="#MenuButtonClicked" text="Menu" />
             <Label fx:id="AppLabel" alignment="CENTER" contentDisplay="TOP" text="Quick Coffəə" textFill="WHITE">
                <font>
                   <Font name="Georgia Bold" size="24.0" />
@@ -53,7 +56,7 @@
             <Insets bottom="15.0" />
          </BorderPane.margin>
          <padding>
-            <Insets left="310.0" />
+            <Insets left="75.0" />
          </padding>
       </HBox>
    </top>

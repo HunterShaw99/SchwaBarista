@@ -10,6 +10,7 @@ import java.io.IOException;
 public class MainPage extends Application {
     @Override
     public void start(Stage stage) throws IOException {
+        //FXMLLoader fxmlLoader = new FXMLLoader(MainPage.class.getResource("core/controllers/detail-page-view.fxml"));
         FXMLLoader fxmlLoader = new FXMLLoader(MainPage.class.getResource("main-page-view.fxml"));
         MainPageController mainpagecontroller = new MainPageController(new ObserverManager());
         fxmlLoader.setController(mainpagecontroller);

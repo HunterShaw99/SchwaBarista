@@ -22,6 +22,29 @@
     -fx-background-color:  #361d09;
     -fx-effect: dropshadow(three-pass-box, #1f0f04, 10, .07, 0.5,0.5);
 }
+.label {
+    -fx-font: 22px  Arial ;
+    -fx-font-weight: BOLD;
+    -fx-text-fill:  #502c12;
+}
+#OrderTotalLabel, #PickupTimeLabel {
+    -fx-font: 22px  Arial ;
+    -fx-font-weight: BOLD;
+    -fx-text-fill:  #361d09;
+}
+#AppLabel {
+    -fx-font: 24px Georgia;
+    -fx-font-weight: BOLD;
+    -fx-text-fill: WHITE;
+}
+#MenuButton {
+    -fx-text-fill: #361d09;
+    -fx-background-color: white;
+}
+#MenuButton:focused {
+    -fx-background-color: #cccbc9;
+    -fx-text-fill:  #361d09;
+}
 VBox {
     -fx-background-color:  white;
     -fx-background-radius: 25px;
