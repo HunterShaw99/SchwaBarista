@@ -19,9 +19,7 @@ public class OrderModel {
         this.orderStatus = orderStatus;
     }
 
-    public BigDecimal Get_OrderTotal() {
-        return orderTotal;
-    }
+    public BigDecimal Get_OrderTotal() {return orderTotal;}
 
     public ObservableList<CoffeeModel> GetBeverageList() {
         return beverageLIST;

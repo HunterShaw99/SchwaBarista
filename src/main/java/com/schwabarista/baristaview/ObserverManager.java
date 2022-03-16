@@ -1,4 +1,5 @@
 package com.schwabarista.baristaview;
+import com.amazonaws.services.sqs.model.Message;
 import com.schwabarista.baristaview.Observer;
 import com.schwabarista.baristaview.Subject;
 
@@ -18,9 +19,9 @@ public class ObserverManager implements Subject {
     }
 
     @Override
-    public void notifyObservers() {
+    public void notifyObservers(List<Message> messages) {
         for (Observer observer : observers) {
-            observer.update();
+            observer.update(messages);
         }
     }
 }

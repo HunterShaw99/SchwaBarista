@@ -6,17 +6,18 @@ import com.amazonaws.services.sqs.AmazonSQS;
 import java.util.List;
 
 public class ReceiveOrder extends ObserverManager implements Runnable {
+    private final String queueURL = "https://sqs.us-east-1.amazonaws.com/261944900994/schwa-coffee.fifo";
+    private final String queueNAME = "schwa-coffee.fifo";
 
     @Override
     public void run() {
         AmazonSQS sqs = AmazonSQSClientBuilder.defaultClient();
-        String queueUrl = "https://sqs.us-east-1.amazonaws.com/261944900994/schwa-coffee.fifo";
 
         while (true) {
-            List<Message> messages = sqs.receiveMessage(queueUrl).getMessages();
+            List<Message> messages = sqs.receiveMessage(queueURL).getMessages();
 
             if (!messages.isEmpty()) {
-                notifyObservers();
+                notifyObservers(messages);
             }
         }
     }
