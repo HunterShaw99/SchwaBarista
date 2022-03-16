@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fb497ce-8322-4ba3-8d23-2b621bb23eac" name="Changes" comment="">
+    <list default="true" id="4fb497ce-8322-4ba3-8d23-2b621bb23eac" name="Changes" comment="Updated OrderCell.fxml and the controller (OrderCell.java). Also deleted duplicate OrderModel file">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/ObserverManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/ReceiveOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/Subject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baristaview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/baristaview.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/MainPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderCellFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderCellFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/OrderCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/OrderCell.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/main-page-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/main-page-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -104,6 +105,13 @@
       <workItem from="1647210055957" duration="62000" />
       <workItem from="1647310348462" duration="258000" />
       <workItem from="1647310639265" duration="6632000" />
+      <workItem from="1647386790769" duration="21900000" />
+      <workItem from="1647408935607" duration="295000" />
+      <workItem from="1647409411033" duration="266000" />
+      <workItem from="1647440546373" duration="1786000" />
+      <workItem from="1647442972266" duration="2798000" />
+      <workItem from="1647445870865" duration="267000" />
+      <workItem from="1647446271832" duration="3476000" />
     </task>
     <servers />
   </component>

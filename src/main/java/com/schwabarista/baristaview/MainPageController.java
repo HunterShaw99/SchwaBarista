@@ -6,16 +6,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.input.MouseEvent;
-import com.amazonaws.services.sqs.AmazonSQS;
-import com.amazonaws.services.sqs.AmazonSQSClientBuilder;
-import com.amazonaws.services.sqs.model.AmazonSQSException;
-import com.amazonaws.services.sqs.model.CreateQueueRequest;
-import com.amazonaws.services.sqs.model.ListQueuesRequest;
-import com.amazonaws.services.sqs.model.ListQueuesResult;
-import software.amazon.awssdk.regions.Region;
-import com.amazonaws.regions.Regions;
 
-public class MainPageController {
+public class MainPageController implements Observer {
 
     @FXML
     public ListView<OrderModel> MainListView;
@@ -23,12 +15,21 @@ public class MainPageController {
     @FXML
     public Button QuitButton;
 
+    public MainPageController(ObserverManager observermanager) {
+        observermanager.registerObserver(this);
+    }
+
     public void initialize() {
         MainListView.setCellFactory(new OrderCellFactory());
+    }
+
+    public void update() {
+
     }
 
     @FXML
     void QuitButtonClicked (MouseEvent event) {
         Platform.exit();
     }
+
 }
