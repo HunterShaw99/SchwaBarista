@@ -6,13 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4fb497ce-8322-4ba3-8d23-2b621bb23eac" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baristaview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/baristaview.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/MainPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderCellFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderCellFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/OrderCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/OrderCell.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +97,8 @@
       <workItem from="1647210055957" duration="62000" />
       <workItem from="1647310348462" duration="258000" />
       <workItem from="1647310639265" duration="6632000" />
+      <workItem from="1647383685064" duration="646000" />
+      <workItem from="1647385018285" duration="496000" />
     </task>
     <servers />
   </component>
