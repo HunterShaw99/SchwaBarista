@@ -1,4 +1,4 @@
-package com.schwabarista.baristaview.models.constants;
+package com.schwabarista.baristaview.core.controllers;
 
 import java.math.BigDecimal;
 

@@ -4,15 +4,20 @@ import javafx.collections.ObservableList;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.List;
 import java.util.UUID;
 
 public class OrderModel implements Serializable {
 
     public BigDecimal orderTotal;
-    public ObservableList<CoffeeModel> beverageLIST;
-    public final String orderID;
+    public List<CoffeeModel> beverageLIST;
+    public String orderID;
     public OrderStatus orderStatus;//Order Status is either {PROCESSING, DONE, CANCELLED}
     //private String pickupTime;
+
+    public OrderModel(){
+
+    }
 
     public OrderModel(BigDecimal orderTotal, ObservableList<CoffeeModel> beverageLIST, OrderStatus orderStatus) {
         this.orderTotal = orderTotal;
@@ -23,7 +28,7 @@ public class OrderModel implements Serializable {
 
     public BigDecimal Get_OrderTotal() {return orderTotal;}
 
-    public ObservableList<CoffeeModel> GetBeverageList() {
+    public List<CoffeeModel> GetBeverageList() {
         return beverageLIST;
     }
 

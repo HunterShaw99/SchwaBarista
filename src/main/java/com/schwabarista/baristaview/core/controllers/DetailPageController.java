@@ -3,7 +3,6 @@ package com.schwabarista.baristaview.core.controllers;
 import com.schwabarista.baristaview.ObserverManager;
 import com.schwabarista.baristaview.core.data.OrderManager;
 import com.schwabarista.baristaview.MainPage;
-import com.schwabarista.baristaview.models.constants.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -58,7 +57,7 @@ public class DetailPageController {
         ObservableList<CoffeeModel> items = FXCollections.observableArrayList();
         Image image = testImageView.getImage();
 
-        CoffeeModel c1 = new CoffeeModel(image.getUrl());
+        CoffeeModel c1 = new CoffeeModel();
         c1.setName("First item");
         c1.setMilk(Dairy.ALMOND);
         c1.setSize(Size.SMALL);
@@ -66,14 +65,14 @@ public class DetailPageController {
         c1.addFlavor(Flavor.CARAMEL);
         items.add(c1);
 
-        CoffeeModel c2 = new CoffeeModel(image.getUrl());
+        CoffeeModel c2 = new CoffeeModel();
         c2.setName("Second item");
         c2.setMilk(Dairy.SKIM);
         c2.setSize(Size.LARGE);
         c2.setPrice(CoffeePrice.LARGE_COST);
         items.add(c2);
 
-        CoffeeModel c3 = new CoffeeModel(image.getUrl());
+        CoffeeModel c3 = new CoffeeModel();
         c3.setName("Third item");
         c3.setMilk(Dairy.ALMOND);
         c3.setSize(Size.SMALL);
@@ -81,7 +80,7 @@ public class DetailPageController {
         c3.addFlavor(Flavor.CARAMEL);
         items.add(c3);
 
-        CoffeeModel c4 = new CoffeeModel(image.getUrl());
+        CoffeeModel c4 = new CoffeeModel();
         c4.setName("Fourth item");
         c4.setMilk(Dairy.SKIM);
         c4.setSize(Size.LARGE);
@@ -101,7 +100,7 @@ public class DetailPageController {
         OrderManager.GetInstance().SetCurrentItem(order);
         //end
 
-        ConfirmListView.setItems(OrderManager.GetInstance().GetCurrentItem().GetBeverageList());
+        //ConfirmListView.setItems(OrderManager.GetInstance().GetCurrentItem().GetBeverageList());
         ConfirmListView.setCellFactory(new CoffeeCellFactory());
 
         OrderNumberLabel.setText("Order #" + OrderManager.GetInstance().GetCurrentItem().GetOrderID().substring(0,5));
