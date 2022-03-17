@@ -5,6 +5,7 @@ import com.schwabarista.baristaview.core.data.OrderManager;
 import com.schwabarista.baristaview.models.CoffeeModel;
 import com.schwabarista.baristaview.models.OrderModel;
 import javafx.application.Platform;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -27,11 +28,14 @@ public class MainPageController implements Observer {
     @FXML
     public Button QuitButton;
 
+    private ObservableList<OrderModel> listOfItems = FXCollections.observableArrayList();
+
     public MainPageController(ObserverManager observermanager) {
         observermanager.registerObserver(this);
     }
 
     public void initialize() {
+        MainListView.setItems(orders);
         MainListView.setCellFactory(new OrderCellFactory());
 
         // Start thread to access queue
@@ -44,15 +48,10 @@ public class MainPageController implements Observer {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
 
-        int i, index = 0;
-        i = messages.size();
+        String message = messages.get(0).getBody();
+        OrderModel order = objectMapper.readValue(message, OrderModel.class);
+        orders.add(order);
 
-        while (index < i) {
-            String message = messages.get(index).getBody();
-            OrderModel order = objectMapper.readValue(message, OrderModel.class);
-            orders.add(order);
-            index++;
-        }
         MainListView.setItems(orders);
         MainListView.setCellFactory(new OrderCellFactory());
     }

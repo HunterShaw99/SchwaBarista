@@ -7,11 +7,11 @@ import java.util.UUID;
 
 public class OrderModel {
 
-    private final BigDecimal orderTotal;
-    private ObservableList<CoffeeModel> beverageLIST;
-    private final String orderID;
-    private OrderStatus orderStatus;//Order Status is either {PROCESSING, DONE, CANCELLED}
-    private String pickupTime;
+    public BigDecimal orderTotal;
+    public ObservableList<CoffeeModel> beverageLIST;
+    public final String orderID;
+    public OrderStatus orderStatus;//Order Status is either {PROCESSING, DONE, CANCELLED}
+    //private String pickupTime;
 
     public OrderModel(BigDecimal orderTotal, ObservableList<CoffeeModel> beverageLIST, OrderStatus orderStatus) {
         this.orderTotal = orderTotal;
@@ -38,11 +38,11 @@ public class OrderModel {
         this.orderStatus = orderStatus;
     }
 
-    public String GetPickupTime() {
+    /*public String GetPickupTime() {
         return pickupTime;
     }
 
     public void SetPickupTime(String pickupTime) {
         this.pickupTime = pickupTime;
-    }
+    }*/
 }

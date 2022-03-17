@@ -14,7 +14,7 @@ public class MainPage extends Application {
         //FXMLLoader fxmlLoader = new FXMLLoader(MainPage.class.getResource("core/controllers/detail-page-view.fxml"));
 
         FXMLLoader fxmlLoader = new FXMLLoader(MainPage.class.getResource("main-page-view.fxml"));
-        MainPageController mainpagecontroller = new MainPageController(new ObserverManager());
+        MainPageController mainpagecontroller = new MainPageController(ObserverManager.GetInstance());
         fxmlLoader.setController(mainpagecontroller);
 
         Scene scene = new Scene(fxmlLoader.load());

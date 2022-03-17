@@ -98,7 +98,7 @@ public class DetailPageController {
         c.add(Calendar.MINUTE, 16);
 
         String time = c.get(Calendar.HOUR) + ":" + String.format("%02d", c.get(Calendar.MINUTE));
-        order.SetPickupTime(time);
+        //order.SetPickupTime(time);
 
         OrderManager.GetInstance().AddItem(order);
         OrderManager.GetInstance().SetCurrentItem(order);
@@ -109,7 +109,7 @@ public class DetailPageController {
 
         OrderNumberLabel.setText("Order #" + OrderManager.GetInstance().GetCurrentItem().GetOrderID().substring(0,5));
         OrderTotalLabel.setText("$" + OrderManager.GetInstance().GetCurrentItem().Get_OrderTotal());
-        PickupTimeLabel.setText(OrderManager.GetInstance().GetCurrentItem().GetPickupTime());
+        //PickupTimeLabel.setText(OrderManager.GetInstance().GetCurrentItem().GetPickupTime());
 
 
     }
