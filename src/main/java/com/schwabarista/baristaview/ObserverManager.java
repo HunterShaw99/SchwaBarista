@@ -31,8 +31,6 @@ public class ObserverManager implements Subject {
 
     @Override
     public void notifyObservers(List<Message> messages) throws JsonProcessingException {
-        System.out.println("Observers notified.");
-        System.out.println(observers);
         for (Observer observer : observers) {
             observer.update(messages);
         }

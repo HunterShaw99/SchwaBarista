@@ -22,9 +22,9 @@ public class ReceiveOrder implements Runnable {
             List<Message> messages = sqs.receiveMessage(queueURL).getMessages();
 
             //need to delete to get the next message
-            /*for (Message m : messages) {
+            for (Message m : messages) {
                 sqs.deleteMessage(queueURL, m.getReceiptHandle());
-            }*/
+            }
 
             if (!messages.isEmpty()) {
                 try {

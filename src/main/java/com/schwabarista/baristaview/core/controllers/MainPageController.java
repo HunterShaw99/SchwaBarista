@@ -50,7 +50,6 @@ public class MainPageController implements Observer {
         objectMapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
 
         String message = messages.get(0).getBody();
-        System.out.println(message);
         OrderModel order = objectMapper.readValue(message, OrderModel.class);
         orders.add(order);
 
