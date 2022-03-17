@@ -1,5 +1,6 @@
 package com.schwabarista.baristaview;
 
+import com.schwabarista.baristaview.core.data.OrderManager;
 import com.schwabarista.baristaview.models.OrderModel;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -40,6 +41,7 @@ public class OrderCell extends ListCell<OrderModel> {
     private Parent root;
 
     public void initialize() {
+
     }
 
     @FXML
@@ -75,9 +77,15 @@ public class OrderCell extends ListCell<OrderModel> {
             drinkNumber.setText(String.valueOf(order.GetBeverageList().size()));
             orderTotal.setText("$" + order.Get_OrderTotal().toString());
             orderStatus.setText(order.GetOrderStatus().toString());
+
             ViewButton.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent event) {
+
+                    // Transition to detail page when view button is selected
+                    OrderManager.GetInstance().SetCurrentItem(order);
+
+                    // Load detail page
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("detail-page-view.fxml"));
                     try {
                         root = loader.load();

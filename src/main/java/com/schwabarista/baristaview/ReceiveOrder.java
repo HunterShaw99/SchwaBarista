@@ -8,8 +8,6 @@ import java.util.List;
 
 public class ReceiveOrder extends ObserverManager implements Runnable {
     private final String queueURL = "https://sqs.us-east-1.amazonaws.com/261944900994/schwa-coffee.fifo";
-    private final String queueNAME = "schwa-coffee.fifo";
-
 
     public void run() {
         AmazonSQS sqs = AmazonSQSClientBuilder.standard()

@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fb497ce-8322-4ba3-8d23-2b621bb23eac" name="Changes" comment="Updated OrderCell.fxml and the controller (OrderCell.java). Also deleted duplicate OrderModel file">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/ObserverManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/ReceiveOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/Subject.java" afterDir="false" />
+    <list default="true" id="4fb497ce-8322-4ba3-8d23-2b621bb23eac" name="Changes" comment="Most updated version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/MainPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/main-page-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/main-page-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderCell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/ReceiveOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/ReceiveOrder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +40,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../schwacoffe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -114,7 +110,19 @@
       <workItem from="1647442972266" duration="2798000" />
       <workItem from="1647445870865" duration="267000" />
       <workItem from="1647446271832" duration="3476000" />
+      <workItem from="1647471496347" duration="3413000" />
+      <workItem from="1647483648675" duration="987000" />
+      <workItem from="1647485334591" duration="7621000" />
+      <workItem from="1647495332014" duration="1587000" />
     </task>
+    <task id="LOCAL-00001" summary="Most updated version">
+      <created>1647468078510</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1647468078510</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,5 +150,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Most updated version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Most updated version" />
   </component>
 </project>
