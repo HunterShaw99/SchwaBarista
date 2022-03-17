@@ -1,4 +1,4 @@
-package com.schwa.schwacoffe.core.tasks;
+package com.schwabarista.baristaview;
 
 
  import com.amazonaws.services.sqs.AmazonSQS;

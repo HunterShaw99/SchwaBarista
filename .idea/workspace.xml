@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fb497ce-8322-4ba3-8d23-2b621bb23eac" name="Changes" comment="Established transition between main page and detail page">
+    <list default="true" id="4fb497ce-8322-4ba3-8d23-2b621bb23eac" name="Changes" comment="Latest version of Barista UI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/MainPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/Observer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/ObserverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/ObserverManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/ReceiveOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/ReceiveOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/RemoveFromQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/RemoveFromQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/OrderCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/OrderCell.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +113,10 @@
       <workItem from="1647483648675" duration="987000" />
       <workItem from="1647485334591" duration="7621000" />
       <workItem from="1647495332014" duration="1787000" />
-      <workItem from="1647536170066" duration="4127000" />
+      <workItem from="1647536170066" duration="9701000" />
+      <workItem from="1647546319669" duration="1638000" />
+      <workItem from="1647547990169" duration="1469000" />
+      <workItem from="1647549832070" duration="2087000" />
     </task>
     <task id="LOCAL-00001" summary="Most updated version">
       <created>1647468078510</created>
@@ -133,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647497521661</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Latest version of Barista UI">
+      <created>1647540473456</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1647540473456</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +171,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Most updated version" />
     <MESSAGE value="Established transition between main page and detail page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Established transition between main page and detail page" />
+    <MESSAGE value="Latest version of Barista UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Latest version of Barista UI" />
   </component>
 </project>
