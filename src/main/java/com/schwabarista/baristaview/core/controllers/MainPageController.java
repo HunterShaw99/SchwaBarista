@@ -5,6 +5,7 @@ import com.schwabarista.baristaview.Observer;
 import com.schwabarista.baristaview.ObserverManager;
 import com.schwabarista.baristaview.OrderCellFactory;
 import com.schwabarista.baristaview.ReceiveOrder;
+import com.schwabarista.baristaview.core.data.OrderManager;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -21,7 +22,6 @@ import java.util.List;
 
 public class MainPageController implements Observer {
     ReceiveOrder receiveorder;
-    ObservableList<OrderModel> orders = FXCollections.observableArrayList();
 
     @FXML
     public ListView<OrderModel> MainListView;
@@ -36,7 +36,7 @@ public class MainPageController implements Observer {
     }
 
     public void initialize() {
-        MainListView.setItems(orders);
+        MainListView.setItems(OrderManager.GetInstance().GetItemList());
         MainListView.setCellFactory(new OrderCellFactory());
 
         // Start thread to access queue
@@ -51,9 +51,9 @@ public class MainPageController implements Observer {
 
         String message = messages.get(0).getBody();
         OrderModel order = objectMapper.readValue(message, OrderModel.class);
-        orders.add(order);
+        OrderManager.GetInstance().AddItem(order);
 
-        MainListView.setItems(orders);
+        MainListView.setItems(OrderManager.GetInstance().GetItemList());
         MainListView.setCellFactory(new OrderCellFactory());
     }
 

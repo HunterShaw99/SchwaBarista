@@ -54,53 +54,10 @@ public class DetailPageController {
          * TODO:
          * Remove this
          */
-        ObservableList<CoffeeModel> items = FXCollections.observableArrayList();
-        Image image = testImageView.getImage();
-
-        CoffeeModel c1 = new CoffeeModel();
-        c1.setName("First item");
-        c1.setMilk(Dairy.ALMOND);
-        c1.setSize(Size.SMALL);
-        c1.setPrice(CoffeePrice.SMALL_COST);
-        c1.addFlavor(Flavor.CARAMEL);
-        items.add(c1);
-
-        CoffeeModel c2 = new CoffeeModel();
-        c2.setName("Second item");
-        c2.setMilk(Dairy.SKIM);
-        c2.setSize(Size.LARGE);
-        c2.setPrice(CoffeePrice.LARGE_COST);
-        items.add(c2);
-
-        CoffeeModel c3 = new CoffeeModel();
-        c3.setName("Third item");
-        c3.setMilk(Dairy.ALMOND);
-        c3.setSize(Size.SMALL);
-        c3.setPrice(CoffeePrice.SMALL_COST);
-        c3.addFlavor(Flavor.CARAMEL);
-        items.add(c3);
-
-        CoffeeModel c4 = new CoffeeModel();
-        c4.setName("Fourth item");
-        c4.setMilk(Dairy.SKIM);
-        c4.setSize(Size.LARGE);
-        c4.setPrice(CoffeePrice.LARGE_COST);
-        items.add(c4);
-
-        BigDecimal total = c1.getPrice().add(c2.getPrice()).add(c3.getPrice()).add(c4.getPrice());
-        OrderModel order = new OrderModel(total, items, OrderStatus.PROCESSING);
-
-        Calendar c = Calendar.getInstance();
-        c.add(Calendar.MINUTE, 16);
-
-        String time = c.get(Calendar.HOUR) + ":" + String.format("%02d", c.get(Calendar.MINUTE));
-        //order.SetPickupTime(time);
-
-        OrderManager.GetInstance().AddItem(order);
-        OrderManager.GetInstance().SetCurrentItem(order);
         //end
 
         ObservableList<CoffeeModel> newList = FXCollections.observableArrayList(OrderManager.GetInstance().GetCurrentItem().beverageLIST);
+
         ConfirmListView.setItems(newList);
         ConfirmListView.setCellFactory(new CoffeeCellFactory());
 
@@ -118,13 +75,13 @@ public class DetailPageController {
 
     public void CancelButtonClicked(ActionEvent event) throws IOException {
         System.out.println("Cancelled");
-        OrderManager.GetInstance().RemoveCurrentItem();
+        OrderManager.GetInstance().GetCurrentItem().orderStatus=OrderStatus.CANCELLED;
         SwitchToMainPage(event);
     }
 
     public void ConfirmButtonClicked(ActionEvent event) throws IOException {
         System.out.println("Confirmed");
-        OrderManager.GetInstance().RemoveCurrentItem();
+        OrderManager.GetInstance().GetCurrentItem().orderStatus=OrderStatus.DONE;
         SwitchToMainPage(event);
     }
 

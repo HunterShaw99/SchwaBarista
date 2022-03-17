@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" stylesheets="@detail-page-style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schwabarista.baristaview.core.controllers.DetailPageController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" stylesheets="@core/controllers/detail-page-style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schwabarista.baristaview.core.controllers.DetailPageController">
    <center>
       <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="621.0" spacing="15.0" BorderPane.alignment="CENTER">
          <children>
@@ -29,9 +29,9 @@
                   <Button fx:id="ConfirmButton" layoutX="420.0" layoutY="520.0" mnemonicParsing="false" onAction="#ConfirmButtonClicked" prefHeight="50.0" prefWidth="150.0" text=" Confirm Order" />
                   <Button fx:id="CancelButton" layoutY="520.0" mnemonicParsing="false" onAction="#CancelButtonClicked" prefHeight="50.0" prefWidth="150.0" text="Cancel Order" />
                   <Label layoutX="161.0" layoutY="420.0" text="Order Total:" />
-                  <Label layoutX="148.0" layoutY="380.0" text="Pickup Time:" />
+<!--                  <Label layoutX="148.0" layoutY="380.0" text="Pickup Time:" />-->
                   <Label fx:id="OrderTotalLabel" layoutX="302.0" layoutY="420.0" text="\$14.99" />
-                  <Label fx:id="PickupTimeLabel" layoutX="302.0" layoutY="380.0" text="3:05" />
+<!--                  <Label fx:id="PickupTimeLabel" layoutX="302.0" layoutY="380.0" text="3:05" />-->
                </children></Pane>
          </children>
          <BorderPane.margin>
@@ -60,13 +60,4 @@
          </padding>
       </HBox>
    </top>
-   <bottom>
-   </bottom>
-   <bottom>
-      <ImageView fx:id="testImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-         <image>
-            <Image url="@../../CarmelMaccTestimage.png" />
-         </image>
-      </ImageView>
-   </bottom>
 </BorderPane>
