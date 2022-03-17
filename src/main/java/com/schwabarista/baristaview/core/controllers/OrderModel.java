@@ -4,6 +4,7 @@ import javafx.collections.ObservableList;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -13,9 +14,8 @@ public class OrderModel implements Serializable {
     public List<CoffeeModel> beverageLIST;
     public String orderID;
     public OrderStatus orderStatus;//Order Status is either {PROCESSING, DONE, CANCELLED}
-    //private String pickupTime;
 
-    public OrderModel(){
+    public OrderModel() {
 
     }
 
@@ -26,7 +26,9 @@ public class OrderModel implements Serializable {
         this.orderStatus = orderStatus;
     }
 
-    public BigDecimal Get_OrderTotal() {return orderTotal;}
+    public BigDecimal Get_OrderTotal() {
+        return orderTotal;
+    }
 
     public List<CoffeeModel> GetBeverageList() {
         return beverageLIST;
@@ -44,11 +46,4 @@ public class OrderModel implements Serializable {
         this.orderStatus = orderStatus;
     }
 
-    /*public String GetPickupTime() {
-        return pickupTime;
-    }
-
-    public void SetPickupTime(String pickupTime) {
-        this.pickupTime = pickupTime;
-    }*/
 }

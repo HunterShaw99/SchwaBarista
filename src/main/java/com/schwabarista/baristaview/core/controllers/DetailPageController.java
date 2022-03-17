@@ -100,7 +100,8 @@ public class DetailPageController {
         OrderManager.GetInstance().SetCurrentItem(order);
         //end
 
-        //ConfirmListView.setItems(OrderManager.GetInstance().GetCurrentItem().GetBeverageList());
+        ObservableList<CoffeeModel> newList = FXCollections.observableArrayList(OrderManager.GetInstance().GetCurrentItem().beverageLIST);
+        ConfirmListView.setItems(newList);
         ConfirmListView.setCellFactory(new CoffeeCellFactory());
 
         OrderNumberLabel.setText("Order #" + OrderManager.GetInstance().GetCurrentItem().GetOrderID().substring(0,5));

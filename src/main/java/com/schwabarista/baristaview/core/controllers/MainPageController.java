@@ -21,7 +21,7 @@ import java.util.List;
 
 public class MainPageController implements Observer {
     ReceiveOrder receiveorder;
-    ObservableList<OrderModel> orders;
+    ObservableList<OrderModel> orders = FXCollections.observableArrayList();
 
     @FXML
     public ListView<OrderModel> MainListView;
