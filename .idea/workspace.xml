@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fb497ce-8322-4ba3-8d23-2b621bb23eac" name="Changes" comment="Most updated version">
+    <list default="true" id="4fb497ce-8322-4ba3-8d23-2b621bb23eac" name="Changes" comment="Established transition between main page and detail page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/MainPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderCell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/Observer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/ObserverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/ObserverManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/ReceiveOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/ReceiveOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +116,8 @@
       <workItem from="1647471496347" duration="3413000" />
       <workItem from="1647483648675" duration="987000" />
       <workItem from="1647485334591" duration="7621000" />
-      <workItem from="1647495332014" duration="1587000" />
+      <workItem from="1647495332014" duration="1787000" />
+      <workItem from="1647536170066" duration="4127000" />
     </task>
     <task id="LOCAL-00001" summary="Most updated version">
       <created>1647468078510</created>
@@ -122,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647468078510</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Established transition between main page and detail page">
+      <created>1647497521661</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1647497521661</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +164,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Most updated version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Most updated version" />
+    <MESSAGE value="Established transition between main page and detail page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Established transition between main page and detail page" />
   </component>
 </project>

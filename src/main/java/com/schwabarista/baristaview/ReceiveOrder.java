@@ -4,6 +4,8 @@ import com.amazonaws.regions.Regions;
 import com.amazonaws.services.sqs.AmazonSQSClientBuilder;
 import com.amazonaws.services.sqs.model.Message;
 import com.amazonaws.services.sqs.AmazonSQS;
+import com.fasterxml.jackson.core.JsonProcessingException;
+
 import java.util.List;
 
 public class ReceiveOrder extends ObserverManager implements Runnable {
@@ -18,9 +20,12 @@ public class ReceiveOrder extends ObserverManager implements Runnable {
             List<Message> messages = sqs.receiveMessage(queueURL).getMessages();
 
             if (!messages.isEmpty()) {
-                notifyObservers(messages);
+                try {
+                    notifyObservers(messages);
+                } catch (JsonProcessingException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
-
 }

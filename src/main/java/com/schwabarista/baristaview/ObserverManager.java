@@ -1,5 +1,6 @@
 package com.schwabarista.baristaview;
 import com.amazonaws.services.sqs.model.Message;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.schwabarista.baristaview.Observer;
 import com.schwabarista.baristaview.Subject;
 
@@ -19,7 +20,7 @@ public class ObserverManager implements Subject {
     }
 
     @Override
-    public void notifyObservers(List<Message> messages) {
+    public void notifyObservers(List<Message> messages) throws JsonProcessingException {
         for (Observer observer : observers) {
             observer.update(messages);
         }
