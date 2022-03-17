@@ -1,11 +1,12 @@
-package com.schwabarista.baristaview.models;
+package com.schwabarista.baristaview.core.controllers;
 
-import com.schwabarista.baristaview.models.constants.OrderStatus;
 import javafx.collections.ObservableList;
+
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.UUID;
 
-public class OrderModel {
+public class OrderModel implements Serializable {
 
     public BigDecimal orderTotal;
     public ObservableList<CoffeeModel> beverageLIST;

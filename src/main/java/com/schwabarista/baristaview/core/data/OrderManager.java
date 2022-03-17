@@ -1,11 +1,8 @@
 package com.schwabarista.baristaview.core.data;
 
-import com.schwabarista.baristaview.models.CoffeeModel;
-import com.schwabarista.baristaview.models.OrderModel;
+import com.schwabarista.baristaview.core.controllers.OrderModel;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import java.math.BigDecimal;
-import java.util.UUID;
 
 
 public class OrderManager {

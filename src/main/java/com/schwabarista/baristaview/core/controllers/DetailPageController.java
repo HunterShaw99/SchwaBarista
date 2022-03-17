@@ -1,11 +1,8 @@
 package com.schwabarista.baristaview.core.controllers;
 
-import com.schwabarista.baristaview.MainPageController;
 import com.schwabarista.baristaview.ObserverManager;
 import com.schwabarista.baristaview.core.data.OrderManager;
 import com.schwabarista.baristaview.MainPage;
-import com.schwabarista.baristaview.models.CoffeeModel;
-import com.schwabarista.baristaview.models.OrderModel;
 import com.schwabarista.baristaview.models.constants.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

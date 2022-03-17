@@ -1,9 +1,10 @@
-package com.schwabarista.baristaview;
+package com.schwabarista.baristaview.core.controllers;
 
 import com.amazonaws.services.sqs.model.Message;
-import com.schwabarista.baristaview.core.data.OrderManager;
-import com.schwabarista.baristaview.models.CoffeeModel;
-import com.schwabarista.baristaview.models.OrderModel;
+import com.schwabarista.baristaview.Observer;
+import com.schwabarista.baristaview.ObserverManager;
+import com.schwabarista.baristaview.OrderCellFactory;
+import com.schwabarista.baristaview.ReceiveOrder;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -49,6 +50,7 @@ public class MainPageController implements Observer {
         objectMapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
 
         String message = messages.get(0).getBody();
+        System.out.println(message);
         OrderModel order = objectMapper.readValue(message, OrderModel.class);
         orders.add(order);
 

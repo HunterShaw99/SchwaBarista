@@ -1,5 +1,6 @@
 package com.schwabarista.baristaview;
 
+import com.schwabarista.baristaview.core.controllers.MainPageController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

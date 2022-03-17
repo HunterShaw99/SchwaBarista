@@ -1,7 +1,7 @@
 package com.schwabarista.baristaview;
 
 import com.schwabarista.baristaview.core.data.OrderManager;
-import com.schwabarista.baristaview.models.OrderModel;
+import com.schwabarista.baristaview.core.controllers.OrderModel;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;

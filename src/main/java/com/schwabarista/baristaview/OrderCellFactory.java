@@ -1,6 +1,6 @@
 package com.schwabarista.baristaview;
 
-import com.schwabarista.baristaview.models.OrderModel;
+import com.schwabarista.baristaview.core.controllers.OrderModel;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 import javafx.util.Callback;

@@ -1,9 +1,11 @@
-package com.schwabarista.baristaview.models;
+package com.schwabarista.baristaview.core.controllers;
 
 import com.schwabarista.baristaview.models.constants.Dairy;
 import com.schwabarista.baristaview.models.constants.Flavor;
 import com.schwabarista.baristaview.models.constants.Size;
 import javafx.scene.image.Image;
+
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +13,7 @@ import java.util.UUID;
 
 //each coffee model will have: a name, the chosen size, the chosen milk, the chosen flavors,
 //                            the total price, and the prices per size.
-public class CoffeeModel {
+public class CoffeeModel implements Serializable {
 
     private UUID itemID;
     private String name;
