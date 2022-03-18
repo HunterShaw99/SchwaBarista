@@ -41,12 +41,6 @@ public class OrderCell extends ListCell<OrderModel> {
     private Parent root;
 
     public void initialize() {
-
-    }
-
-    @FXML
-    void viewButtonPressed(ActionEvent event) {
-
     }
 
     public OrderCell() {

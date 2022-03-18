@@ -1,0 +1,60 @@
+.button {
+    -fx-font: 16px  Arial ;
+    -fx-text-fill:  white;
+    -fx-font-weight: BOLD;
+    -fx-background-color:  #361d09;
+}
+.button:focused {
+    -fx-background-color:  #502c12;
+    -fx-text-fill:  white;
+}
+.list-cell, .list-view {
+    -fx-background-color: transparent;
+}
+#ConfirmListView .scroll-bar {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+#ConfirmListView .scroll-bar .thumb {
+    -fx-background-color: #1f0f04;
+}
+#HeaderBar {
+    -fx-background-color:  #361d09;
+    -fx-effect: dropshadow(three-pass-box, #1f0f04, 10, .07, 0.5,0.5);
+}
+.label {
+    -fx-font: 22px  Arial ;
+    -fx-font-weight: BOLD;
+    -fx-text-fill:  #502c12;
+}
+#OrderTotalLabel, #PickupTimeLabel {
+    -fx-font: 22px  Arial ;
+    -fx-font-weight: BOLD;
+    -fx-text-fill:  #361d09;
+}
+#AppLabel {
+    -fx-font: 26px Arial;
+    -fx-font-weight: BOLD;
+    -fx-text-fill: WHITE;
+}
+#MenuButton {
+    -fx-text-fill: #361d09;
+    -fx-background-color: white;
+}
+#MenuButton:focused {
+    -fx-background-color: #cccbc9;
+    -fx-text-fill:  #361d09;
+}
+VBox {
+    -fx-background-color:  white;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+}
+BorderPane {
+    -fx-background-color:  #bbaea3 ;
+}
+.separator .line{
+    -fx-border-color:  #361d09;
+    -fx-border-width: 4px;
+    -fx-border-style: solid;
+}

@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fb497ce-8322-4ba3-8d23-2b621bb23eac" name="Changes" comment="Latest version of Barista UI">
+    <list default="true" id="4fb497ce-8322-4ba3-8d23-2b621bb23eac" name="Changes" comment="Fixed OrderCell error">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/core/controllers/main-page-style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/RemoveFromQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/RemoveFromQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderCell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/OrderCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/OrderCell.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/main-page-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/main-page-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +21,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="Interface" />
+        <option value="CSS File" />
         <option value="Class" />
       </list>
     </option>
@@ -40,6 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -116,7 +120,10 @@
       <workItem from="1647536170066" duration="9701000" />
       <workItem from="1647546319669" duration="1638000" />
       <workItem from="1647547990169" duration="1469000" />
-      <workItem from="1647549832070" duration="2087000" />
+      <workItem from="1647549832070" duration="2906000" />
+      <workItem from="1647554953538" duration="452000" />
+      <workItem from="1647564441957" duration="6014000" />
+      <workItem from="1647570706248" duration="1653000" />
     </task>
     <task id="LOCAL-00001" summary="Most updated version">
       <created>1647468078510</created>
@@ -139,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647540473456</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed OrderCell error">
+      <created>1647552844792</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1647552844792</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +186,7 @@
     <MESSAGE value="Most updated version" />
     <MESSAGE value="Established transition between main page and detail page" />
     <MESSAGE value="Latest version of Barista UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Latest version of Barista UI" />
+    <MESSAGE value="Fixed OrderCell error" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed OrderCell error" />
   </component>
 </project>
