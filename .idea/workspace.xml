@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fb497ce-8322-4ba3-8d23-2b621bb23eac" name="Changes" comment="">
+    <list default="true" id="4fb497ce-8322-4ba3-8d23-2b621bb23eac" name="Changes" comment="Fixed OrderCell error">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/core/controllers/main-page-style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baristaview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/baristaview.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/MainPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderCellFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderCellFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/schwabarista/baristaview/OrderModel.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/OrderCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/OrderCell.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/main-page-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/schwabarista/baristaview/main-page-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="CSS File" />
         <option value="Class" />
       </list>
     </option>
@@ -43,7 +42,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../schwacoffe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -104,7 +104,56 @@
       <workItem from="1647210055957" duration="62000" />
       <workItem from="1647310348462" duration="258000" />
       <workItem from="1647310639265" duration="6632000" />
+      <workItem from="1647383685064" duration="646000" />
+      <workItem from="1647385018285" duration="496000" />
+      <workItem from="1647386790769" duration="21900000" />
+      <workItem from="1647408935607" duration="295000" />
+      <workItem from="1647409411033" duration="266000" />
+      <workItem from="1647440546373" duration="1786000" />
+      <workItem from="1647442972266" duration="2798000" />
+      <workItem from="1647445870865" duration="267000" />
+      <workItem from="1647446271832" duration="3476000" />
+      <workItem from="1647471496347" duration="3413000" />
+      <workItem from="1647483648675" duration="987000" />
+      <workItem from="1647485334591" duration="7621000" />
+      <workItem from="1647495332014" duration="1787000" />
+      <workItem from="1647536170066" duration="9701000" />
+      <workItem from="1647546319669" duration="1638000" />
+      <workItem from="1647547990169" duration="1469000" />
+      <workItem from="1647549832070" duration="2906000" />
+      <workItem from="1647554953538" duration="452000" />
+      <workItem from="1647564441957" duration="6014000" />
+      <workItem from="1647570706248" duration="1653000" />
     </task>
+    <task id="LOCAL-00001" summary="Most updated version">
+      <created>1647468078510</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1647468078510</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Established transition between main page and detail page">
+      <created>1647497521661</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1647497521661</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Latest version of Barista UI">
+      <created>1647540473456</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1647540473456</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixed OrderCell error">
+      <created>1647552844792</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1647552844792</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,5 +181,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Most updated version" />
+    <MESSAGE value="Established transition between main page and detail page" />
+    <MESSAGE value="Latest version of Barista UI" />
+    <MESSAGE value="Fixed OrderCell error" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed OrderCell error" />
   </component>
 </project>

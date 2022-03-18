@@ -1,16 +1,23 @@
-package com.schwabarista.baristaview.models;
+package com.schwabarista.baristaview.core.controllers;
 
-import com.schwabarista.baristaview.models.constants.OrderStatus;
 import javafx.collections.ObservableList;
+
+import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
-public class OrderModel {
+public class OrderModel implements Serializable {
 
-    private final BigDecimal orderTotal;
-    private ObservableList<CoffeeModel> beverageLIST;
-    private final String orderID;
-    private OrderStatus orderStatus;//Order Status is either {PROCESSING, DONE, CANCELLED}
+    public BigDecimal orderTotal;
+    public List<CoffeeModel> beverageLIST;
+    public String orderID;
+    public OrderStatus orderStatus;//Order Status is either {PROCESSING, DONE, CANCELLED}
+
+    public OrderModel() {
+
+    }
 
     public OrderModel(BigDecimal orderTotal, ObservableList<CoffeeModel> beverageLIST, OrderStatus orderStatus) {
         this.orderTotal = orderTotal;
@@ -23,7 +30,7 @@ public class OrderModel {
         return orderTotal;
     }
 
-    public ObservableList<CoffeeModel> GetBeverageList() {
+    public List<CoffeeModel> GetBeverageList() {
         return beverageLIST;
     }
 

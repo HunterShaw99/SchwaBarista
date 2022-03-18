@@ -8,6 +8,7 @@ module com.schwabarista.baristaview {
     requires aws.java.sdk.sqs;
     requires aws.java.sdk.core;
     requires software.amazon.awssdk.regions;
+    requires com.fasterxml.jackson.databind;
 
     opens com.schwabarista.baristaview to javafx.fxml;
     exports com.schwabarista.baristaview;

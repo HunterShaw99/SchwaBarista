@@ -1,9 +1,12 @@
-package com.schwabarista.baristaview.models;
+package com.schwabarista.baristaview.core.controllers;
 
-import com.schwabarista.baristaview.models.constants.Dairy;
-import com.schwabarista.baristaview.models.constants.Flavor;
-import com.schwabarista.baristaview.models.constants.Size;
+import com.schwabarista.baristaview.core.controllers.Dairy;
+import com.schwabarista.baristaview.core.controllers.Flavor;
+import com.schwabarista.baristaview.core.controllers.Dairy;
+
 import javafx.scene.image.Image;
+
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,15 +14,15 @@ import java.util.UUID;
 
 //each coffee model will have: a name, the chosen size, the chosen milk, the chosen flavors,
 //                            the total price, and the prices per size.
-public class CoffeeModel {
+public class CoffeeModel implements Serializable {
 
-    private UUID itemID;
-    private String name;
-    private Size size;
-    private Dairy milk;
-    private List<Flavor> flavors;
-    private BigDecimal price;
-    private Image image;
+    public UUID itemID;
+    public String name;
+    public Size size;
+    public Dairy milk;
+    public List<Flavor> flavors;
+    public BigDecimal price;
+    public String image;
 
     public CoffeeModel() {
         itemID = UUID.randomUUID();
@@ -27,10 +30,10 @@ public class CoffeeModel {
         this.flavors = new ArrayList<Flavor>();
     }
 
-    public CoffeeModel(String imageURL) {
+    public CoffeeModel(String imageURL, BigDecimal price) {
         itemID = UUID.randomUUID();
-        image = new Image(imageURL);
-        this.price = BigDecimal.ZERO;
+        image = imageURL;
+        this.price = price;
         this.flavors = new ArrayList<Flavor>();
     }
 
@@ -70,9 +73,9 @@ public class CoffeeModel {
         return milk.getDairy();
     }
 
-    public String getFlavors() {
-        String str = flavors.toString();
-        return str.substring(1, str.length()-1);
+    public ArrayList<Flavor> getFlavors() {
+        ArrayList<Flavor> f = new ArrayList<>(flavors);
+        return f;
     }
 
     public void setPrice(BigDecimal price) {
@@ -91,11 +94,7 @@ public class CoffeeModel {
         flavors.remove(flavor);
     }
 
-    public Image getImage() {
+    public String getImage() {
         return image;
-    }
-
-    public void setImage(Image image) {
-        this.image = image;
     }
 }

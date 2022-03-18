@@ -1,7 +1,7 @@
-package com.schwabarista.baristaview.models.constants;
+package com.schwabarista.baristaview.core.controllers;
 
 public enum Dairy {
-    WHOLE("Whole"), SKIM("Non-fat"), _2PERCENT("2%"),
+    WHOLE("Whole"), SKIM("Skim"), _2PERCENT("2%"),
     ALMOND("Almond"), SOY("Soy"), NONE("None");
 
     private String dairy;
