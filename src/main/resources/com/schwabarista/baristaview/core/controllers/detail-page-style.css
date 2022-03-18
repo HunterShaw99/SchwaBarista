@@ -33,7 +33,7 @@
     -fx-text-fill:  #361d09;
 }
 #AppLabel {
-    -fx-font: 24px Georgia;
+    -fx-font: 26px Arial;
     -fx-font-weight: BOLD;
     -fx-text-fill: WHITE;
 }
