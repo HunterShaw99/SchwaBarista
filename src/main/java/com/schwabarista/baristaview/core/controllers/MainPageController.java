@@ -54,7 +54,7 @@ public class MainPageController implements Observer {
         OrderManager.GetInstance().AddItem(order);
 
         MainListView.setItems(OrderManager.GetInstance().GetItemList());
-        MainListView.setCellFactory(new OrderCellFactory());
+        MainListView.refresh();
     }
 
     @FXML
